@@ -13,3 +13,6 @@ max_temperature = max(temperatures)
 print(f"max temp: {max_temperature}")
 min_temperature = min(temperatures)
 print(f"min temp: {min_temperature}")
+
+avg_temp = sum(temperatures)/len(temperatures)
+print(f"average temp: {avg_temp:.2f}")
