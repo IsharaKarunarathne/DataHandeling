@@ -25,3 +25,27 @@ for name, score in student_scores.items():
        print(f"{name}: {score}")
 print("\n")
 
+#update the score for an existing student
+
+student_scores["Alice"] = 60
+print(f"upated marks for one student")
+
+for name, score in student_scores.items():
+       print(f"{name}: {score}")
+print("\n")
+
+#find the highest mark
+
+if student_scores: #ensure dictionary is not empty
+      highest_score = 0
+      highest_scorer_name = ""
+      for name, score in student_scores.items():
+            if score > highest_score:
+                  highest_score = score
+                  highest_scorer_name = name
+      print("highest score")
+      print(f"{highest_scorer_name}: {highest_score}\n")
+else:
+      print("the dictionary is empty, can not find the highest score.\n")
+
+
