@@ -48,4 +48,16 @@ if student_scores: #ensure dictionary is not empty
 else:
       print("the dictionary is empty, can not find the highest score.\n")
 
+#create a dictionary with high achievers
+high_achievers = {}
+for name, score in student_scores.items():
+      if score >= 90:
+            high_achievers [name] = score
+
+print("high achievers with score 90 or above")
+if high_achievers:
+      for name, score in high_achievers.items():
+             print(f"{name}: {score}\n")
+else:
+      print ("no students score 90 or above")
 
