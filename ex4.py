@@ -31,7 +31,7 @@ def update_stock(product_id, quantity):
 
 def get_low_stock_products(threshold):
     low_stock_products = []
-    for products in inventory:
+    for product in inventory:
         if product['stock'] < threshold:
             low_stock_products.append(product['name'])
     return low_stock_products
