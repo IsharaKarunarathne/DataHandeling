@@ -20,10 +20,11 @@ def get_low_stock_products(threshold):
     low_stock_products = []
     for product in inventory:
         if product['stock'] < threshold:
-            low_stock_products.append(product['name'])
+            low_stock_products.append(product)
     return low_stock_products
 
-result = get_low_stock_products(100)
+x= int(input("enter the threshold stock value: "))
+result = get_low_stock_products(x)
 
 print(f"{result}") 
 
@@ -47,8 +48,8 @@ try:
         print(f"successfully wrote {len(result)} inventory records to {csv_file_name2}")
 
 except IOError as e:
-     print("error: could not write to {csv_file_name}. {e}")
+     print(f"error: could not write to {csv_file_name}. {e}")
 
 except Exception as e:
-    print("unexpected errror occured. {e}")
+    print(f"unexpected error occured. {e}")
 

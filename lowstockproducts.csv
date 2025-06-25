@@ -1,1 +1,6 @@
 id,name,price,stock
+p001,laptop,1200,50
+p002,mouse,200,70
+p003,keyboard,500,10
+p004,monitor,1500,20
+p005,webcam,400,5
